@@ -14,6 +14,8 @@ const style = {
   authButton: `bg-white font-bold text-red-500 px-6 py-3 items-center ml-4 rounded-lg hover:bg-red-500 duration-300 hover:text-white`,
 };
 
+const currentAccount = '0xBE90E6c6D2560c3275244Fc35Bf33Cd84D5f78d5';
+
 const Header = () => {
   return (
     <div className={style.wrapper}>
@@ -29,21 +31,21 @@ const Header = () => {
         </div>
         <div className={style.rightMenu}>
           <div>ENGLISH</div>
-
+          {/* 
           <button className={style.authButton} onClick={() => connectWallet()}>
             Login
-          </button>
-          {/* {currentAccount ? (
+          </button> */}
+          {currentAccount ? (
             <>
               <div className={style.currentAccount}>
-                <Image
+                {/* <Image
                   src={
                     'https://moralis.io/wp-content/uploads/2021/05/moralisWhiteLogo.svg'
                   }
                   alt='moralis'
                   height={20}
                   width={20}
-                />
+                /> */}
                 <span className={style.accountAddress}>
                   {currentAccount.slice(0, 6)}...{currentAccount.slice(39)}
                 </span>
@@ -62,7 +64,7 @@ const Header = () => {
             >
               Login
             </button>
-          )} */}
+          )}
         </div>
       </div>
     </div>
