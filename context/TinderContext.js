@@ -10,14 +10,14 @@ export const TinderProvider = ({ children }) => {
   const [currentAccount, setCurrentAccount] = useState();
   const [currentUser, setCurrentUser] = useState();
 
-  useEffect(() => {
-    checkWalletConnection();
+  // useEffect(() => {
+  //   checkWalletConnection();
 
-    if (isAuthenticated) {
-      requestUsersData(user.get('ethAddress'));
-      requestCurrentUserData(user.get('ethAddress'));
-    }
-  }, [isAuthenticated]);
+  //   if (isAuthenticated) {
+  //     requestUsersData(user.get('ethAddress'));
+  //     requestCurrentUserData(user.get('ethAddress'));
+  //   }
+  // }, [isAuthenticated]);
 
   const checkWalletConnection = async () => {
     if (isAuthenticated) {
