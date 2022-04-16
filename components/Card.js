@@ -1,6 +1,7 @@
 import React from 'react';
 import { SiTinder } from 'react-icons/si';
 import CardHeader from './CardHeader';
+import CardFooter from './CardFooter';
 
 const style = {
   wrapper: `h-[45rem] w-[27rem] flex flex-col rounded-lg overflow-hidden`,
@@ -28,7 +29,7 @@ const Card = () => {
           ))} */}
         </div>
       </div>
-      {/* <CardFooter /> */}
+      <CardFooter />
     </div>
   );
 };
