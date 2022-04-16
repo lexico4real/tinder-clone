@@ -23,11 +23,11 @@ const style = {
 };
 
 const TinderCardItem = ({ card }) => {
-  const { handleRightSwipe, currentAccount } = useContext(TinderContext);
+  // const { handleRightSwipe, currentAccount } = useContext(TinderContext);
 
   const onSwipe = (dir) => {
     if (dir === 'right') {
-      handleRightSwipe(card, currentAccount);
+      // handleRightSwipe(card, currentAccount);
     }
   };
 
@@ -39,16 +39,16 @@ const TinderCardItem = ({ card }) => {
     >
       <div
         className={style.wrapper}
-        style={{ backgroundImage: `url('${card.imageUrl}')` }}
+        // style={{ backgroundImage: `url('${card.imageUrl}')` }}
       >
         <div className={style.space}>
           <div className={style.name}>
-            {card.name}
-            <span className={style.age}>{card.age}</span>
+            {/* {card.name} */}
+            {/* <span className={style.age}>{card.age}</span> */}
           </div>
         </div>
         <div className={style.walletAddress}>
-          {card.walletAddress.slice(0, 6)}...{card.walletAddress.slice(39)}
+          {/* {card.walletAddress.slice(0, 6)}...{card.walletAddress.slice(39)} */}
         </div>
         <div className={style.reactionsContainer}>
           <div className={`${style.backColors} ${style.buttonContainer}`}>
