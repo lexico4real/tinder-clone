@@ -1,7 +1,7 @@
 require('@nomiclabs/hardhat-waffle');
 require('dotenv').config({ path: '.env' });
 
-const ALCHEMY_API_KEY = process.env.ALCHEMY_API_URL;
+const ALCHEMY_API_URL = process.env.ALCHEMY_API_URL;
 const RINKEBY_PRIVATE_KEY = process.env.RINKEBY_PRIVATE_KEY;
 
 module.exports = {
